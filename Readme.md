@@ -28,4 +28,6 @@ Sixteenth-brick modules will also fit (with some wasted space).
 * Weight: 36.5g (module only, TODO)
 * Dimensions: 23mm x 91mm x 23mm
 
+![](murata_efficiency.png)
+
 
