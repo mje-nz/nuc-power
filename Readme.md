@@ -12,6 +12,8 @@ It's designed for a [Murata UWE-12/10-Q12NB-C](https://www.digikey.co.nz/product
 Quarter-brick modules will fit as well, but they'll hang off the edge (and you'd probably get better thermal performance with a bigger PCB anyway).
 Sixteenth-brick modules will also fit (with some wasted space).
 
+For the NUC connector, I recommend [Tensility 10-01066](https://www.digikey.co.nz/product-detail/en/tensility-international-corp/10-01066/839-1166-ND/3507717) or equivalent (right angle 5.5x2.5mm barrel jack, no more than 11mm long, 18AWG or thicker wire).
+
 
 ## Specifications
 
@@ -25,7 +27,7 @@ Sixteenth-brick modules will also fit (with some wasted space).
 * Short-circuit protection: shuts down when output voltage drops below 98%, hiccups indefinitely with no damage
 * Over-temperature protection: shuts down over ~140C
 * Reverse polarity protection: no damage on current-limited supply, fuse blows otherwise
-* Weight: 36.5g (module only, TODO)
+* Weight: 50g without connectors
 * Dimensions: 23mm x 91mm x 23mm
 
 ![](murata_efficiency.png)
