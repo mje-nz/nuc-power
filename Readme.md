@@ -1,4 +1,6 @@
 # NUC power supply board
+![](images/v1_assembled.jpg)
+
 For NUC7i5 and below we've been successfully using the 12V output on the [MATEK UBEC DUO](http://www.mateksys.com/?portfolio=u4a2p), which is rated to 60W (72W max) on 4-6S.
 THe NUC7i5 comes with a 19V 65W power supply, and the NUC itself draws about 50W max.
 The NUC8i3/5/7 come with a 90W power supply.
@@ -13,6 +15,8 @@ Quarter-brick modules will fit as well, but they'll hang off the edge (and you'd
 Sixteenth-brick modules will also fit (with some wasted space).
 
 For the NUC connector, I recommend [Tensility 10-01066](https://www.digikey.co.nz/product-detail/en/tensility-international-corp/10-01066/839-1166-ND/3507717) or equivalent (right angle 5.5x2.5mm barrel jack, no more than 11mm long, 18AWG or thicker wire).
+
+![](images/v1_powering_nuc.jpg)
 
 Running a NUC8i5BEK from a 4S battery with the CPU at 100% and no air movement, the heat spreader reaches about 60ºC (too hot to hold but not too hot to touch).
 
@@ -32,7 +36,7 @@ Running a NUC8i5BEK from a 4S battery with the CPU at 100% and no air movement, 
 * Weight: 50g without connectors
 * Dimensions: 23mm x 91mm x 23mm
 
-![](murata_efficiency.png)
+![](images/murata_efficiency.png)
 
 
 ## Reference information
