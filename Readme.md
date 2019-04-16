@@ -14,12 +14,14 @@ Sixteenth-brick modules will also fit (with some wasted space).
 
 For the NUC connector, I recommend [Tensility 10-01066](https://www.digikey.co.nz/product-detail/en/tensility-international-corp/10-01066/839-1166-ND/3507717) or equivalent (right angle 5.5x2.5mm barrel jack, no more than 11mm long, 18AWG or thicker wire).
 
+Running a NUC8i5BEK from a 4S battery with the CPU at 100% and no air movement, the heat spreader reaches about 60ºC (too hot to hold but not too hot to touch).
+
 
 ## Specifications
 
 * Input voltage: 9-36V (4-6S comfortably, 3-8S at a stretch)
 * Input current: 15A (fused, switch to a 20A fuse for packs < 6S)
-* Output voltage: 12V (trimmable +-10%, I've set it at 12.5V)
+* Output voltage: 12V (trimmable ±10%, I've set it at 12.5V)
 * Output current: 10A
 * Max base plate temperature: 100C (no derating)
 * Under-voltage protection: shuts down at ~8V, starts up at ~10V
@@ -31,5 +33,25 @@ For the NUC connector, I recommend [Tensility 10-01066](https://www.digikey.co.n
 * Dimensions: 23mm x 91mm x 23mm
 
 ![](murata_efficiency.png)
+
+
+## Reference information
+The [NUC8ixBE Technical Product Specification](https://www.intel.com/content/dam/support/us/en/documents/mini-pcs/NUC8i3BE_NUC8i5BE_NUC8i7BE_TechProdSpec.pdf) says:
+
+> 2.2.4.6 Power Supply Connector
+>
+> The board can be powered through a 12-19V DC connector on the back panel.
+> The back panel DC connector is compatible with a 5.5 mm/OD (outer diameter) and 2.5 mm/ID (inner diameter) plug, where the inner contact is 12-19V DC ±10% and the shell is GND.
+> The maximum current rating is 10A.
+>
+> 2.2.4.6.1 Power Sensing Circuit
+>
+> The board has a power sensing circuit that:
+>   * Manages CPU power usage to maintain system power consumption below 90W.
+>   * Designed for use with 90W AC-DC adapters.
+>
+> It is recommended that you disable this feature (via BIOS option) when using an AC-DC adapter greater than 90W.
+
+The [NUC7ixBNB TPS](https://www.intel.com/content/dam/support/us/en/documents/mini-pcs/nuc-kits/NUC7i5BN_NUC7i7BN_TechProdSpec.pdf), [NUC6ixSYB TPS](https://www.intel.com/content/dam/support/us/en/documents/boardsandkits/NUC6i5SYB_NUC6i3SYB_TechProdSpec.pdf) and [NUC5ixRYB TPS](https://www.intel.com/content/dam/support/us/en/documents/mini-pcs/nuc-kits/NUC5i5RYB_NUC5i3RYB_TechProdSpec.pdf) say the same thing with 65W instead of 90W.
 
 
